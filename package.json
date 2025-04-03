@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm install && cd client && npm install && npm run build",
     "render-build": "npm install && cd client && npm install && npm run build",
-    "render-start": "cd server && node server.js"
+    "render-start": "cd server && node ./server.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
