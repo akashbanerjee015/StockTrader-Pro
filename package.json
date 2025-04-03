@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "client": "cd ../client && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build":"npm install && cd ./client && npm run build && .."
+    "build":"npm install && cd ./client && npm install && npm run build && .."
   },
   "dependencies": {
     "axios": "^0.27.2",
