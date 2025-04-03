@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stocktrader-pro
+    env: node
+    buildCommand: npm run render-build
+    startCommand: npm run render-start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false

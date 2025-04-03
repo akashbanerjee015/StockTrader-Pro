@@ -1,10 +1,11 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+// Base URL that works in both development and production
+const baseURL = process.env.NODE_ENV === 'production' ? '/api' : 'http://localhost:5000/api';
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL,
   headers: {
     'Content-Type': 'application/json'
   }
@@ -22,4 +23,4 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-export default api;
+export default api;
