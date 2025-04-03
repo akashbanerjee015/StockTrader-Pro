@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Stocks Buying and  Selling Web App",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "start": "cd server && node server.js",
     "server": "cd server && nodemon server.js",
